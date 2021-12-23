@@ -1,0 +1,84 @@
+﻿
+<settings class="app-page">
+    <header class="header-bar">
+        <div class="left">
+            <button class="btn pull-left icon icon-arrow-back" data-navigation="$previous-page"></button>
+            <h1 class="title" data-i18n="text: settings">Settings</h1>
+        </div>
+    </header>
+
+    <div class="content">
+
+        <div class="popover popoverl" id="btn-popover">
+            <ul class="list">
+                <li><a class="padded-list library clickablesettingslibrary" data-order="library" option="BGUS">[PL] Biblioteka Główna US</a></li>
+                <li><a class="padded-list library clickablesettingslibrary" data-order="library" option="BPGW">[PL] Biblioteka Pedagogiczna w Gorzowie Wlkp.</a></li>
+                <li><a class="padded-list library clickablesettingslibrary" data-order="library" option="UTH">[PL] Biblioteka UTH w Warszawie</a></li>
+                <li><a class="padded-list library clickablesettingslibrary" data-order="library" option="UJD">[PL] Biblioteka UJD w Częstochowie</a></li>
+                <li><a class="padded-list library clickablesettingslibrary" data-order="library" option="ASP">[PL] Biblioteka ASP w Katowicach</a></li>
+                <li><a class="padded-list library clickablesettingslibrary" data-order="library" option="MBPK">[PL] Miejska Biblioteka Publiczna w Kołobrzegu</a></li>
+                <li><a class="padded-list library clickablesettingslibrary" data-order="library" option="WSD">[PL] Biblioteka ITPiWSD w Rzeszowie</a></li>
+                <li><a class="padded-list library clickablesettingslibrary" data-order="library" option="ROZTOKY">[CZ] MK Roztoky</a></li>
+                <li><a class="padded-list library clickablesettingslibrary" data-order="library" option="TEST">[EN] Testowa biblioteka</a></li>
+            </ul>
+        </div>
+
+        <div class="popoverc popover" id="btn-calendars">
+            <ul class="list">
+                <li><a class="padded-list calendars clickablesettingscalendar" data-order="calendars" option="1" data-i18n="text: saveCalendar">save issues to calendar</a></li>
+                <li><a class="padded-list calendars clickablesettingscalendar" data-order="calendars" option="0" data-i18n="text: ignoreCalendar">ignore calendar</a></li>
+            </ul>
+        </div>
+
+        <div class="popovern popover" id="btn-nfc">
+            <ul class="list">
+                <li><a class="padded-list nfc clickablesettingsnfc" data-order="nfc" option="1" data-i18n="text: NFCenabled">NFC enabled</a></li>
+                <li><a class="padded-list nfc clickablesettingsnfc" data-order="nfc" option="0" data-i18n="text: NFCdisabled">NFC disabled</a></li>
+            </ul>
+        </div>
+
+
+        <div class="padded-full">
+
+            <button id="libraryselector" class="btn btn-popover fit-parent primary clickablesettings" data-autobind="false" data-popover-id="btn-popover" data-i18n="text: selectlibrary">Select your library</button>
+            <input type="hidden" name="library" class="libval" id="input-library" value="" />
+            <div class="input-wrapper">
+                <input class="with-label clickablesettings" type="text" id="input-login">
+                <label class="floating-label" for="input-login" data-i18n="text: login">Login</label>
+            </div>
+
+            <div class="input-wrapper">
+                <input class="with-label clickablesettings" type="password" id="input-password">
+                <label class="floating-label" for="input-password" data-i18n="text: password">Password</label>
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div style="width: 100%; text-align: center;">
+                <button class="btn primary test clickablesettings" data-i18n="text: test">test</button>
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div style="width: 100%; text-align: center;">
+                <button id="calendarsselector" class="btn btn-popover fit-parent primary clickablesettings" data-autobind="false" data-popover-id="btn-calendars" data-i18n="text: saveCalendar">save issues to calendar</button>
+                <input type="hidden" name="calendars" class="libvalc" id="input-calendars" value="1" />
+            </div>
+
+            <p>&nbsp;</p>
+
+            
+            <div style="width: 100%; text-align: center; display: none;">
+                <button id="nfcselector" class="btn btn-popover fit-parent primary clickablesettings" data-autobind="false" data-popover-id="btn-nfc" data-i18n="text: NFCdisabled">NFC disabled</button>
+                <input type="hidden" name="nfc" class="libvalcnfc" id="input-nfc" value="0" />
+            </div>
+
+            <p>&nbsp;</p>
+
+            <div style="width: 100%;">
+                <div style="float:left; width: 49%; text-align: center;"><button class="btn primary save clickablesettings" data-i18n="text: save">Save</button></div>
+                <div style="float:left; width: 49%; text-align: center;"><button class="btn negative cancel clickablesettings" data-order="cancel" data-i18n="text: cancel">Cancel</button></div>
+            </div>
+        </div>
+        </div>
+</settings>

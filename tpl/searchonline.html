@@ -1,0 +1,74 @@
+﻿<searchonline class="app-page">
+    <header class="header-bar">
+        <button class="btn pull-left icon icon-arrow-back" data-navigation="$previous-page"></button>
+        <div class="center">
+            <h1 class="title" data-i18n="text: searchOnline">Search OnLine</h1>
+        </div>
+        <a class="btn pull-right icon icon-edit" id="searchnowbutton" onClick="globals.newResults(); return false"></a>
+    </header>
+
+    <div class="content" id="searchContent">
+        <div class="padded-full">
+            <div class="input-wrapper">
+                <input class="with-label clickablesearch" type="text" id="search-title">
+                <label class="floating-label" for="search-title" data-i18n="text: title">Title</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="with-label clickablesearch" type="text" id="search-author">
+                <label class="floating-label" for="search-author" data-i18n="text: author">Author</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="with-label clickablesearch" type="text" id="search-signature">
+                <label class="floating-label" for="search-signature" data-i18n="text: signature">Signature</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="with-label clickablesearch" type="text" id="search-isbn">
+                <label class="floating-label" for="search-isbn" data-i18n="text: isbn">ISBN</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="with-label clickablesearch" type="text" id="search-subjects">
+                <label class="floating-label" for="search-subjects" data-i18n="text: subjects">Subjects</label>
+            </div>
+            <div class="input-wrapper">
+                <input class="with-label clickablesearch" type="text" id="search-ukd">
+                <label class="floating-label" for="search-ukd" data-i18n="text: ukd">UKD</label>
+            </div>
+            <div class="input-wrapper">
+                <select class="with-label clickablesearch" id="search-publicationyear" style="text-align: right;" dir="rtl">
+                    <option value=""></option>
+                    <option value="1650">1650-1700</option>
+                    <option value="1700">1700-1750</option>
+                    <option value="1750">1750-1800</option>
+                    <option value="1800">1800-1850</option>
+                    <option value="1850">1850-1900</option>
+                    <option value="1900">1900-1950</option>
+                    <option value="1950">1950-2000</option>
+                    <option value="2000">2000-2050</option>
+                    <option value="2050">2050-2100</option>
+                </select>
+                <label class="floating-label" for="search-publicationyear" data-i18n="text: publicationyear">Publication Year</label>
+            </div>
+        </div>
+        <div class="padded-full">
+            <button class="btn  primary search clickablesearch" style="width: 100%;" data-order="search" data-i18n="text: search">Search</button>
+        </div>
+
+    </div>
+
+    <div class="content" style="display: none;" id="searchResult">
+        <div class="padded-full">
+
+            <ul class="list" id="resultsList">
+                <li>
+                    <i class="pull-right icon icon-expand-more"></i>
+                     <a href="#link1" class="padded-list">-</a>
+                    <div class="accordion-content" id="reservList1">
+                        <p>---</p>
+                    </div>
+                </li>
+            </ul>
+            <div id="searchButtons"></div>
+
+        </div>
+    </div>
+</searchonline>

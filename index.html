@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html onkeydown="go_and_run(event.which,event.keyCode,event);">
+<head>
+    <meta charset="utf-8" />
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <title>README</title>
+
+    <!-- bg references -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/phonon.css" />
+</head>
+<body>
+    <!-- Panel tags go here -->
+    <!-- Side Panel tags go here -->
+    <!-- Notification tags go here -->
+    <!-- Dialog tags go here -->
+
+
+    <home data-page="true">
+
+        <header class="header-bar">
+            <div class="center">
+                <h1 class="title" data-i18n="text: catalogueKOHA">BOOK DELIVERY SYSTEM</h1>
+            </div>
+            <a class="btn pull-right icon icon-home" id="homebutton"></a>
+
+        </header>
+        <div class="content">
+
+            <ul class="list">
+                <li class="divider" style="text-align: center;" id="lastupdate" data-i18n="text: noupdate">No update data.</li>
+                <li><a class="padded-list clickablebutton" href="#!circulation"><i class="material-icons">&#xE865;</i> <span id="circCalc" data-i18n="text: circulation">Circulation</span></a></li>
+                <li><a class="padded-list clickablebutton" href="#!reservations"><i class="material-icons">&#xE88B;</i> <span id="resCalc" data-i18n="text: reservations">Reservations</span></a></li>
+                <li><a class="padded-list clickablebutton" href="#!payments"><i class="material-icons">payment</i> <span data-i18n="text: payments" id="payCalc">Payments</span></a></li>
+                <li><a class="padded-list clickablebutton" href="#!searchonline"><i class="material-icons">search</i> <span data-i18n="text: searchOnlineReserve">Search OnLine &amp; Order</span></a></li>
+                <li><a class="padded-list clickablebutton" href="#!searchbarcodeonline"><i class="material-icons">&#xE0B8;</i> <span data-i18n="text: searchBarcodeOnline">Search Barcode OnLine</span></a></li>
+                <li><a class="padded-list clickablebutton" href="#!proposition"><i class="material-icons">&#xE8B2;</i> <span data-i18n="text: propositions">Propositions</span></a></li>
+                <li><a class="padded-list clickablebutton" href="#!userinfo"><i class="material-icons">&#xE851;</i> <span data-i18n="text: userinfo" id="userinfo">User Info</span></a></li>
+                <!--               <li><a class="padded-list" href="#!history"><i class="material-icons">&#xE889;</i> <span data-i18n="text: history" id="history">History</span></a></li>-->
+                <li><a class="padded-list clickablebutton" href="#" id="refreshdata"><i class="material-icons">refresh</i> <span data-i18n="text: refresh">Refresh data</span></a></li>
+                <li><a class="padded-list clickablebutton" href="#!settings"><i class="material-icons">settings</i> <span data-i18n="text: settings">Settings</span></a></li>
+                <li><a class="padded-list clickablebutton" href="#!about"><i class="material-icons">info</i> <span data-i18n="text: about">About</span></a></li>
+                <li><a class="padded-list clickablebutton" href="#" id="exit"><i class="material-icons">&#xE879;</i> <span data-i18n="text: exit">Exit</span></a></li>
+            </ul>
+
+        </div>
+    </home>
+
+    <!-- Circulation -->
+    <circulation data-page="true"></circulation>
+    <!-- Reservations -->
+    <reservations data-page="true"></reservations>
+    <!-- Payments -->
+    <payments data-page="true"></payments>
+    <!-- Search Online -->
+    <searchonline data-page="true"></searchonline>
+    <!-- Search Barcode Online -->
+    <searchbarcodeonline data-page="true"></searchbarcodeonline>
+    <!-- Proposition -->
+    <proposition data-page="true"></proposition>
+    <!-- Settings -->
+    <settings data-page="true"></settings>
+    <!-- About -->
+    <about data-page="true"></about>
+    <!-- Make order -->
+    <makeorder data-page="true"></makeorder>
+    <!-- Display -->
+    <displayer data-page="true"></displayer>
+    <!-- my ID -->
+    <myid data-page="true"></myid>
+    <!-- User Info -->
+    <userinfo data-page="true"></userinfo>
+    <!-- History -->
+    <history data-page="true"></history>
+
+
+    <!-- scripts -->
+    <script src="js/phonon.js"></script>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="js/Calendar.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/jquery-2.2.4.min.js"></script>
+    <script src="scripts/jquery-ean13.min.js"></script>
+    <script src="scripts/JsBarcode.custom.min.js"></script>
+    <script src="scripts/circle-progress.js"></script>
+    <script src="scripts/globals.js"></script>
+    <script src="scripts/database.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/myaccordion.js"></script>
+</body>
+</html>
